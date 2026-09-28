@@ -1,0 +1,13 @@
+.env
+config.yaml
+profile.yaml
+data/*.db
+outputs/*
+!outputs/.gitkeep
+__pycache__/
+.venv/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.DS_Store
+assets/signature.png

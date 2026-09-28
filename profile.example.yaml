@@ -1,0 +1,52 @@
+name: Prénom NOM
+headline_title: Data Analyst
+contract: STAGE
+specialties:
+- Python
+- SQL
+- Reporting & KPI
+- Machine Learning
+availability: Disponible pour un stage — France
+phone: +33 6 00 00 00 00
+email: vous@example.com
+location: France
+links:
+- github.com/vous
+summary: Étudiant en informatique, intéressé par l'analyse de données appliquée.
+skills:
+- label: Langages
+  items:
+  - Python
+  - SQL
+- label: Outils
+  items:
+  - Git
+  - Excel
+experience:
+- id: exp1
+  role: Stagiaire développeur
+  org: Entreprise X
+  type: Stage
+  period: juin 2025 – août 2025 · 3 mois
+  location: Paris · Sur site
+  bullets:
+  - id: exp1_b1
+    text: Développé un script Python de nettoyage de données réduisant le traitement de 40 %.
+  - id: exp1_b2
+    text: Documenté l'API interne et formé 5 collègues.
+education:
+- school: Université Y
+  degree: Licence Informatique
+  period: 2022 – 2025
+  note: ''
+languages: Français (natif), Anglais (courant)
+qualities:
+- Rigueur
+- Autonomie
+letter:
+  name: Prénom NOM
+  phone: '0600000000'
+  email: vous@example.com
+  location: Paris, France
+  city: Paris
+  signature_image: signature.png

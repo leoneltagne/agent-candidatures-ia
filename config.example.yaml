@@ -1,0 +1,25 @@
+model: claude-sonnet-4-5        # modèle pour le scoring et l'adaptation du CV
+max_sends_per_day: 5            # plafond de sécurité
+min_score: 65                   # score minimal (0-100) pour préparer une candidature
+
+letter:
+  always: false                # false = lettre uniquement si l'offre la demande
+
+criteria:                       # ce que vous cherchez
+  contract_types: ["stage", "internship", "alternance"]
+  keywords: ["data", "IA", "intelligence artificielle", "développement", "Afrique"]
+  locations: ["France", "Remote", "Afrique"]
+  languages: ["fr", "en"]
+  exclude_keywords: ["senior", "10 ans d'expérience"]
+
+sources:
+  rss:                          # flux RSS / Atom d'offres
+    - https://example.org/jobs.rss
+  career_pages:                 # pages carrières d'organisations ciblées
+    - name: Exemple ONG
+      url: https://example.org/careers
+  email_alerts:                 # alertes reçues dans Gmail (LinkedIn, Indeed...)
+    enabled: false
+    from_contains: ["jobalerts-noreply@linkedin.com", "alert@indeed.com"]
+    link_patterns: ["linkedin.com/comm/jobs/view", "indeed.com/viewjob"]
+    lookback_days: 3

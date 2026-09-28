@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-candidatures-ia"
+version = "0.1.0"
+description = "Agent IA qui repère des offres de stage, adapte le CV, rédige la lettre et prépare l'envoi après validation humaine."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "anthropic>=0.40", "python-docx>=1.1", "pyyaml>=6.0", "feedparser>=6.0",
+  "beautifulsoup4>=4.12", "requests>=2.31", "python-dotenv>=1.0", "playwright>=1.45", "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+agent-candidatures = "agent_candidatures.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
